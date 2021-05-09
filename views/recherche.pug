@@ -1,0 +1,8 @@
+doctype html
+head
+    link(rel='stylesheet' href='/styles.css')
+body
+  h1 #{title} : #{nb} => {#{params}}
+  ul
+   each  row in   data
+    li= row.name + " : " + row.address.building + " " + row.address.street + "  " + row.address.zipcode + " (" +row.borough+ " )" 

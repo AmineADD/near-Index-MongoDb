@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page : le nombre de restaurants dans la base</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./nbrequest.js"></script>
+</head>
+
+<body onload="nbRestaurants()">
+
+    <div class="head">
+        TD10 - Mongo db : le nombre de restaurants dans la base <span id="nb"></span>
+    </div>
+
+    Recherche :
+    <ul>
+        <li><a href="/noms/Bronx/Pizza">Par quartiers et par nom de restaurant </a></li>
+        <li><a href="/noms/Queens/Chinese">Par spécialité </a></li>
+        <li><a href="/noms/Queens">Par noms quartier </a></li>
+        <li><a href="/coords/?x=-73.871194&y=40.6730975">Par coords : postion géographique</a></li>
+    </ul>
+    <a href="/exemple">Page d'erreur exemple </a>
+</body>
+
+</html>

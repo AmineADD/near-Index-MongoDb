@@ -1,0 +1,25 @@
+doctype html
+head
+  link(rel='stylesheet' href='/styles.css') 
+div
+  .box
+    .head
+      | Formulaire
+    .content
+      form.form(action="/coords/" method="get")
+        .content-box
+          .content-form 
+            div
+              | Latitude=X :
+              input(type='text' value=paramsx placeholder='-45.0245' id="x" name="x" required)
+            div
+              | Longitude=Y :
+              input(type='text' value=paramsy placeholder='70.4586' id="y" name="y" required)
+          div
+            div
+              input.btn(type='submit' value='Rechercher' id="btn")
+        div
+          .head 
+            | Réponse restaurants  
+            ul
+                li= data.name + " : " + data.address.building + " " + data.address.street + "  " + data.address.zipcode + " (" +data.borough+ " )" 
